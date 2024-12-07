@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      .box {
+        background-image: url(./slide-02.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid;
+        border-color: transparent;
+        position: relative;
+        justify-content: center;
+        width: 100vw;
+      }
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2px solid;
+        height: max-content;
+        border-color: transparent;
+        justify-content: space-evenly;
+        gap: 25px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar select {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: transparent;
+      }
+      #subbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        border-color: transparent;
+        text-transform: uppercase;
+        color: white;
+        align-self: center;
+        text-align: center;
+      }
+      .subbox1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 15px;
+      }
+      #readmore {
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 100px;
+      }
+      #takeaction {
+        border: 2px solid lightgreen;
+        color: lightgreen;
+        border-radius: 10px;
+        background-color: white;
+        width: 150px;
+      }
+      .cursors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .arrowd {
+        text-align: center;
+        margin: auto;
+      }
+      .slide2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 1px solid;
+        border-color: transparent;
+        background-color: white;
+        /* justify-content: center; */
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        width: 100vw;
+      }
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 40px;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid black;
+        padding-left: 20px;
+        border-color: transparent;
+      }
+      .choice1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2px solid;
+        border-color: transparent;
+        position: relative;
+
+        gap: 100px;
+        /* width: max-content;
+        height: auto; */
+      }
+      .choice2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2px solid;
+        border-color: transparent;
+        position: relative;
+        text-align: center;
+
+        gap: 100px;
+        /* width: max-content;
+        height: auto; */
+      }
+      #learn {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: green;
+        color: white;
+        border: 2px solid green;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      .box2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px solid black;
+        border-color: transparent;
+        position: relative;
+        /* padding-left: 200px; */
+        /* text-align: justify; */
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 30vw;
+      }
+      .slide3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 3px solid rgba(128, 128, 128, 0.388);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        height: auto;
+        width: 100vw;
+        background-color: white;
+        color: black;
+        /* justify-content: center; */
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .initialwork {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px solid black;
+        border-color: transparent;
+        width: 30vw;
+        /* text-align: left; */
+      }
+      /* #learnmore{
+        border: 2px solid black;
+        justify-content: center;
+      } */
+      .masterplanning {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px solid black;
+        border-color: transparent;
+        width: 30vw;
+        /* text-align:  ; */
+      }
+      .smoothexecution {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px solid black;
+        border-color: transparent;
+        width: 30vw;
+      }
+      .slide4 {
+        background-image: url(./slide-02.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 2px solid black;
+        border-color: transparent;
+        height: auto;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100vw;
+      }
+      .input1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 25px;
+        /* padding-top: 30px;
+border-radius: 20px; */
+      }
+      .input1 input {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: transparent;
+
+        border: 2px solid white;
+        border-radius: 20px;
+        border-color: white;
+        color: white;
+        /* padding-right: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+      }
+      .input1 ::placeholder {
+        color: white;
+      }
+      .slide5 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: white;
+        /* border: 2px solid black; */
+        width: 100vw;
+        /* height: 500px; */
+        justify-content: center;
+        position: relative;
+        justify-content: space-evenly;
+        padding: 50px;
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        justify-content: center;
+        /* align-content: center;
+    justify-items: center; */
+        align-items: center;
+        /* text-align: center; */
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        width: fit-content;
+        position: relative;
+        gap: 20px;
+      }
+      .gallery1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 20px;
+      }
+      .gallery2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 20px;
+      }
+      .gallery img {
+        height: 250px;
+        width: 250px;
+      }
+
+      .slide6 {
+        background-image: url(./slide-03.jpg);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: white;
+        text-align: center;
+        padding: 50px;
+        width: 100vw;
+      }
+      .team {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: white;
+        position: relative;
+        justify-content: center;
+        gap: 25px;
+      }
+      .team img {
+        height: 250px;
+      }
+      .names {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: white;
+      }
+      .slide7{
+        background-image: url(./dotted-map-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: white;
+        border: 2px solid black;
+        border-color: transparent;
+        width: 100vw;
+        /* height: 500px; */
+        /* justify-content: center; */
+        position: relative;
+        justify-content: space-evenly;
+        padding: 50px;
+        padding-top: 50px;
+
+      }
+      .contactus{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        gap: 30px;
+      }
+      .message{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        /* border: 2px solid black; */
+        padding: 100px;
+        position: relative;
+        gap: 25px;
+      }
+      .details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 25px;
+
+      }
+      .details1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        gap: 25px;
+      }
+      .message input{
+        /* padding: 10px; */
+        padding-right: 100px;
+      }
+.review input{
+  padding-right: 400px;
+  padding-bottom: 100px;
+  
+
+}
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="navbar">
+        <a href=""><h3>.BREEZED</h3></a>
+        <a href=""><h5>HOME</h5></a>
+        <a href=""><h5>ABOUT</h5></a>
+        <a href=""><h5>PROJECTS</h5></a>
+        <h5 style="color: white">
+          DROP DOWN
+          <!-- <label for="dd"><h5>DROP DOWN</h5></label> -->
+          <select name="dd" id="dd">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </h5>
+
+        <a href=""><h5>CONTACT US</h5></a>
+      </div>
+      <br /><br /><br /><br /><br />
+
+      <div class="cursors">
+        <div><img src="./prev.png" /></div>
+        <div><img src="./next.png" /></div>
+      </div>
+      <div id="subbox">
+        <p>integrated marketing media</p>
+        <h3>best digital marketing</h3>
+        <div class="subbox1">
+          <div id="readmore">readmore</div>
+          <div id="takeaction">take action</div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+    <div class="slide2">
+      <div class="box1">
+        <div>
+          <p style="color: lightgreen">ABOUT US</p>
+          We work with top brands and startups
+        </div>
+        <div class="choice1">
+          <div><img src="./features-icon-1.png" />TOP NOTCH</div>
+          <div><img src="./features-icon-1.png" />ROBUST</div>
+        </div>
+        <div class="choice2">
+          <div><img src="./features-icon-1.png" />RELIABLE</div>
+          <div><img src="./features-icon-1.png" />UP-TO-DATE</div>
+        </div>
+        <div id="learn">
+          LEARN MORE <ion-icon name="arrow-forward-sharp"></ion-icon>
+        </div>
+      </div>
+      <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        quam? Modi deleniti eius neque expedita qui vel beatae, tempora nesciunt
+        omnis, ea ut libero! Ad facere quas quibusdam optio ab.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          aliquid? Enim dolorum ut quidem illo labore nobis illum facere,
+          aliquid, ipsum minus nulla. Dicta, obcaecati modi. Quasi alias
+          cupiditate sed?
+        </p>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="slide3">
+      <div class="initialwork">
+        <div><img src="./features-icon-1.png" />INITIAL WORK</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          maiores similique adipisci voluptatem cumque ut quis obcaecati quia
+          sunt fugit, laudantium in, fugiat corporis dicta repellat,
+          exercitationem est expedita laboriosam!
+        </p>
+        <p id="learnmore">
+          LEARN MORE<ion-icon
+            style="position: relative; top: 3px"
+            name="arrow-forward-sharp"
+          ></ion-icon>
+        </p>
+      </div>
+      <div class="masterplanning">
+        <div><img src="./features-icon-1.png" />MASTER PLANNING</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          culpa blanditiis minus cum eligendi autem suscipit, libero nulla, quo
+          numquam praesentium. Numquam atque ipsum doloribus alias eaque,
+          explicabo velit illo!
+        </p>
+        <p id="learnmore">
+          LEARN MORE<ion-icon
+            style="position: relative; top: 3px"
+            name="arrow-forward-sharp"
+          ></ion-icon>
+        </p>
+      </div>
+      <div class="smoothexecution">
+        <div><img src="./features-icon-1.png" />SMOOTH EXECUTION</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          culpa blanditiis minus cum eligendi autem suscipit, libero nulla, quo
+          numquam praesentium. Numquam atque ipsum doloribus alias eaque,
+          explicabo velit illo!
+        </p>
+        <p id="learnmore">
+          LEARN MORE<ion-icon
+            style="position: relative; top: 3px"
+            name="arrow-forward-sharp"
+          ></ion-icon>
+        </p>
+      </div>
+    </div>
+    <div class="slide4">
+      <div style="text-align: center"><p>SUBSCRIBE NEWSLETTERS</p></div>
+      <div style="text-align: center"><p>Don't miss this chance</p></div>
+      <div style="text-align: center">
+        <p>
+          naruto pervy sage riya riya evaru dominin daughter domini evaru riya
+          mother validharu evaru mother and daugh
+        </p>
+        anime zoro luffy nami robin chopper ussop solo leveling gwem bem tenison
+      </div>
+
+      <div class="input1">
+        <input
+          style="padding: 10px; padding-right: 100px"
+          type="text"
+          value=""
+          placeholder="Enter your email"
+        />
+        <!-- <div style="border: 2px solid; border-radius: 20px; border-color: transparent; color: lightgreen; background-color: white; padding: 5px;"> SUBSCRIBE NOW</div> -->
+        <input
+          style="
+            border: 2px solid;
+            border-radius: 20px;
+            border-color: transparent;
+            color: lightgreen;
+            background-color: white;
+            padding: 5px;
+          "
+          type="submit"
+          value="SUBSCRIBE NOW"
+        />
+      </div>
+    </div>
+    <div class="slide5">
+      <div class="products">
+        <p style="color: lightgreen">OUR PRODUCTS</p>
+        <h3>
+          some of our
+          <p>latest projects</p>
+        </h3>
+        <ul style="list-style: none; text-align: start">
+          <li style="color: green">ALL</li>
+          <br />
+          <li>WE DESIGN</li>
+          <br />
+          <li>WEB DEVELOPMENT</li>
+          <br />
+          <li>GRAPHICS</li>
+          <br />
+          <li>ARTWORKS</li>
+        </ul>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery1">
+          <img src="./project-item-01.jpg" />
+          <img src="./project-item-02.jpg" />
+          <img src="./project-big-item-03.jpg" />
+        </div>
+        <div class="gallery2">
+          <img src="./project-big-item-04.jpg" />
+          <img src="./project-big-item-05.jpg" />
+          <img src="./project-item-06.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="slide6">
+      <div>
+        DIGITAL TEAM
+        <h3>young and talented members</h3>
+      </div>
+      <div class="team">
+        <div>
+          <img src="./member-item-01.jpg" />
+          <p>01.AKHIL AKINENI</p>
+        </div>
+        <div>
+          <img src="./member-item-04.jpg" />
+          <p>ANUPAMA</p>
+        </div>
+        <div>
+          <img src="./member-item-06.jpg" />
+          <p>RASHMIKA DEVARAKONDA</p>
+        </div>
+      </div>
+      <div><ion-icon name="ellipsis-horizontal-outline"></ion-icon></div>
+    </div>
+    <div class="slide7">
+      <div class="contactus"><p style="color: lightgreen">CONTACT US</p>
+        <h3>
+          Feel free to keep in
+          <p>touch with us</p>
+        </h3>
+     <div><ion-icon name="call-outline"></ion-icon> 9848022338</div> 
+      <div><ion-icon name="globe-outline"></ion-icon> www.breezed.com</div>
+     <div><ion-icon name="mail-unread-outline"></ion-icon> info@breezed.com</div> 
+      </div>
+      <div class="message">
+        <div class="details">
+          <div><input type="text" value="" placeholder="Your Name" required> </div>
+          <div><input type="number" value="" placeholder="Your Phone" >   </div>
+        </div>
+        <div class="details1">
+          <div><input type="email" value="" placeholder="Your Email" required >   </div>
+          <div><input type="subject" value="" placeholder="Subject">  </div>
+        </div>
+        <div class="review"> <input type="text" value="" placeholder="Message">   </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
