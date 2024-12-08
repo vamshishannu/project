@@ -397,7 +397,28 @@ border-radius: 20px; */
   
 
 }
-      
+    .send{
+display: flex;
+flex-wrap: wrap;
+border: 2px solid green;
+background-color: green;
+color: white;
+border-radius: 20px;
+width: max-content;
+padding: 10px;
+
+    }  
+    .footer{
+
+      background-image: url(./banner-bg.jpg);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100vw;
+      padding: 25px;
+      color: white;
+      justify-content: space-between;
+    }
     </style>
   </head>
   <body>
@@ -621,8 +642,18 @@ border-radius: 20px; */
           <div><input type="subject" value="" placeholder="Subject">  </div>
         </div>
         <div class="review"> <input type="text" value="" placeholder="Message">   </div>
+        <div class="send">SEND MESSAGE NOW <ion-icon name="arrow-forward-outline"></ion-icon></div>
       </div>
 
+
+    </div>
+    <div class="footer">
+      <div>Replicated by vamshi-10000coders</div>
+    <div class="share"><ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon></div>  
 
     </div>
   </body>
