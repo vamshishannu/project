@@ -13,25 +13,24 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <style>
-      
+
       .box {
         background-image: url(./slide-02.jpg);
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        border: 1px solid;
-        border-color: transparent;
-        position: relative;
-        justify-content: center;
+        flex-wrap: wrap;
+        color: white;
+        text-align: center;
+        padding: 50px;
         width: 100vw;
       }
       .navbar {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 2px solid;
-        height: max-content;
-        border-color: transparent;
+        /* border: 2px solid; */
+        /* height: max-content; */
+        /* border-color: transparent; */
         justify-content: space-evenly;
         gap: 25px;
       }
@@ -42,15 +41,15 @@
 
       .navbar select {
         background-color: transparent;
-        border: 1px solid;
+        /* border: 1px solid; */
         border-color: transparent;
       }
       #subbox {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        border: 2px solid black;
-        border-color: transparent;
+        /* border: 2px solid black;
+        border-color: transparent; */
         text-transform: uppercase;
         color: white;
         align-self: center;
@@ -89,8 +88,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 1px solid;
-        border-color: transparent;
+        /* border: 1px solid;
+        border-color: transparent; */
         background-color: white;
         /* justify-content: center; */
         align-content: center;
@@ -174,7 +173,7 @@
         border-bottom-color: transparent;
         height: auto;
         width: 100vw;
-        background-color: white;
+        /* background-color: white; */
         color: black;
         /* justify-content: center; */
         align-content: center;
@@ -214,15 +213,12 @@
       }
       .slide4 {
         background-image: url(./slide-02.jpg);
-        display: flex;
-        flex-wrap: wrap;
+         display: flex;
         flex-direction: column;
-        border: 2px solid black;
-        border-color: transparent;
-        height: auto;
+        flex-wrap: wrap;
         color: white;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        text-align: center;
+        padding: 50px;
         width: 100vw;
       }
       .input1 {
@@ -339,23 +335,22 @@ border-radius: 20px; */
       }
       .slide7{
         background-image: url(./dotted-map-bg.png);
-        background-repeat: no-repeat;
+         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         background-color: white;
-        border: 2px solid black;
-        border-color: transparent;
+        /* border: 2px solid black;
+        border-color: transparent; */
         width: 100vw;
         /* height: 500px; */
         /* justify-content: center; */
-        position: relative;
+        /* position: relative; */
         justify-content: space-evenly;
         padding: 50px;
         padding-top: 50px;
-
       }
       .contactus{
         display: flex;
@@ -389,15 +384,15 @@ border-radius: 20px; */
         gap: 25px;
       }
       .message input{
-        /* padding: 10px; */
-        padding-right: 100px;
+        padding: 10px;
+         /* padding-right: 100px; */
       }
 .review input{
-  padding-right: 400px;
-  padding-bottom: 100px;
+   /* padding-right: 400px; */
+  padding-bottom: 100px; 
   
 
-}
+} 
     .send{
 display: flex;
 flex-wrap: wrap;
@@ -415,32 +410,35 @@ padding: 10px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 100vw;
+     width: 100vw; 
       padding: 25px;
       color: white;
       justify-content: space-between;
     }
+.navbar a:hover{
+  background-color: rgba(128, 128, 128, 0.457);
+size: 1px;
+}
+
     </style>
   </head>
   <body>
-    <div class="box">
-      <div class="navbar">
-        <a href=""><h3>.BREEZED</h3></a>
-        <a href=""><h5>HOME</h5></a>
-        <a href=""><h5>ABOUT</h5></a>
-        <a href=""><h5>PROJECTS</h5></a>
+    <div class="box" id="home">
+      <div class="navbar" >
+        <a  href=""><h3>.BREEZED</h3></a>
+        <a href="#home"><h5>HOME</h5></a>
+        <a href="#about"><h5>ABOUT</h5></a>
+        <a href="#projects"><h5>PROJECTS</h5></a>
         <h5 style="color: white">
           DROP DOWN
           <!-- <label for="dd"><h5>DROP DOWN</h5></label> -->
           <select name="dd" id="dd">
             <option value=""></option>
             <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
           </select>
         </h5>
 
-        <a href=""><h5>CONTACT US</h5></a>
+        <a href="#contact"><h5>CONTACT US</h5></a>
       </div>
       <br /><br /><br /><br /><br />
 
@@ -459,7 +457,7 @@ padding: 10px;
       </div>
     </div>
     <div class="slide2">
-      <div class="box1">
+      <div class="box1" id="about">
         <div>
           <p style="color: lightgreen">ABOUT US</p>
           We work with top brands and startups
@@ -570,7 +568,7 @@ padding: 10px;
       </div>
     </div>
     <div class="slide5">
-      <div class="products">
+      <div class="products" id="projects">
         <p style="color: lightgreen">OUR PRODUCTS</p>
         <h3>
           some of our
@@ -624,7 +622,7 @@ padding: 10px;
       <div><ion-icon name="ellipsis-horizontal-outline"></ion-icon></div>
     </div>
     <div class="slide7">
-      <div class="contactus"><p style="color: lightgreen">CONTACT US</p>
+      <div class="contactus" id="contact"><p style="color: lightgreen">CONTACT US</p>
         <h3>
           Feel free to keep in
           <p>touch with us</p>
